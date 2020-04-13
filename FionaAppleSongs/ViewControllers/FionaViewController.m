@@ -28,11 +28,8 @@
             NSArray *dataArray = [dataDict objectForKey: @"results"];
             NSMutableArray *arr = [[NSMutableArray alloc] init];
             
-            for (NSDictionary *d in dataArray) {
-                FionaData *fionaData = [[FionaData alloc] init];
-                fionaData.artworkUrl100 = [d objectForKey: @"artworkUrl100"];
-                fionaData.collectionName = [d objectForKey: @"collectionName"];
-                fionaData.trackName = [d objectForKey: @"trackName"];
+            for (NSDictionary *dict in dataArray) {
+                FionaData *fionaData = [[FionaData alloc] initWithDict:dict];
                 [arr addObject:fionaData];
             }
             

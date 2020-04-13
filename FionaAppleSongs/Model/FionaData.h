@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) NSString *trackName;
 @property(nonatomic, strong) NSString *collectionName;
 @property(nonatomic, strong) NSString *artworkUrl100;
+- (instancetype)initWithDict:(NSDictionary*)dict;
 @end
 
 NS_ASSUME_NONNULL_END
