@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		DD85DACC2443DA4300F3717F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DACB2443DA4300F3717F /* AppDelegate.m */; };
 		DD85DACF2443DA4300F3717F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DACE2443DA4300F3717F /* SceneDelegate.m */; };
-		DD85DAD22443DA4300F3717F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DAD12443DA4300F3717F /* ViewController.m */; };
+		DD85DAD22443DA4300F3717F /* FionaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DAD12443DA4300F3717F /* FionaViewController.m */; };
 		DD85DAD52443DA4300F3717F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD85DAD32443DA4300F3717F /* Main.storyboard */; };
 		DD85DAD72443DA4A00F3717F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD85DAD62443DA4A00F3717F /* Assets.xcassets */; };
 		DD85DADA2443DA4A00F3717F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD85DAD82443DA4A00F3717F /* LaunchScreen.storyboard */; };
 		DD85DADD2443DA4A00F3717F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DADC2443DA4A00F3717F /* main.m */; };
+		DD85DAE52443ED7100F3717F /* FionaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD85DAE42443ED7100F3717F /* FionaTableViewCell.m */; };
+		DD9391962443F5BC00BBC5FC /* FionaData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9391952443F5BC00BBC5FC /* FionaData.m */; };
+		DD9391992443F69F00BBC5FC /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9391982443F69F00BBC5FC /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		DD85DACB2443DA4300F3717F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD85DACD2443DA4300F3717F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DD85DACE2443DA4300F3717F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DD85DAD02443DA4300F3717F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD85DAD12443DA4300F3717F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD85DAD02443DA4300F3717F /* FionaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FionaViewController.h; sourceTree = "<group>"; };
+		DD85DAD12443DA4300F3717F /* FionaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FionaViewController.m; sourceTree = "<group>"; };
 		DD85DAD42443DA4300F3717F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD85DAD62443DA4A00F3717F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD85DAD92443DA4A00F3717F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD85DADB2443DA4A00F3717F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD85DADC2443DA4A00F3717F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD85DAE32443ED7100F3717F /* FionaTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FionaTableViewCell.h; sourceTree = "<group>"; };
+		DD85DAE42443ED7100F3717F /* FionaTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FionaTableViewCell.m; sourceTree = "<group>"; };
+		DD9391942443F5BC00BBC5FC /* FionaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FionaData.h; sourceTree = "<group>"; };
+		DD9391952443F5BC00BBC5FC /* FionaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FionaData.m; sourceTree = "<group>"; };
+		DD9391972443F69F00BBC5FC /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		DD9391982443F69F00BBC5FC /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +74,10 @@
 				DD85DACB2443DA4300F3717F /* AppDelegate.m */,
 				DD85DACD2443DA4300F3717F /* SceneDelegate.h */,
 				DD85DACE2443DA4300F3717F /* SceneDelegate.m */,
-				DD85DAD02443DA4300F3717F /* ViewController.h */,
-				DD85DAD12443DA4300F3717F /* ViewController.m */,
+				DD93919E2444125D00BBC5FC /* Cells */,
+				DD93919A2444118600BBC5FC /* HTTPServices */,
+				DD93919C244411AB00BBC5FC /* Model */,
+				DD93919D244411B500BBC5FC /* ViewControllers */,
 				DD85DAD32443DA4300F3717F /* Main.storyboard */,
 				DD85DAD62443DA4A00F3717F /* Assets.xcassets */,
 				DD85DAD82443DA4A00F3717F /* LaunchScreen.storyboard */,
@@ -74,6 +85,42 @@
 				DD85DADC2443DA4A00F3717F /* main.m */,
 			);
 			path = FionaAppleSongs;
+			sourceTree = "<group>";
+		};
+		DD93919A2444118600BBC5FC /* HTTPServices */ = {
+			isa = PBXGroup;
+			children = (
+				DD9391972443F69F00BBC5FC /* HTTPService.h */,
+				DD9391982443F69F00BBC5FC /* HTTPService.m */,
+			);
+			path = HTTPServices;
+			sourceTree = "<group>";
+		};
+		DD93919C244411AB00BBC5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD9391942443F5BC00BBC5FC /* FionaData.h */,
+				DD9391952443F5BC00BBC5FC /* FionaData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD93919D244411B500BBC5FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD85DAD02443DA4300F3717F /* FionaViewController.h */,
+				DD85DAD12443DA4300F3717F /* FionaViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD93919E2444125D00BBC5FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD85DAE32443ED7100F3717F /* FionaTableViewCell.h */,
+				DD85DAE42443ED7100F3717F /* FionaTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD85DAD22443DA4300F3717F /* ViewController.m in Sources */,
+				DD85DAE52443ED7100F3717F /* FionaTableViewCell.m in Sources */,
+				DD85DAD22443DA4300F3717F /* FionaViewController.m in Sources */,
 				DD85DACC2443DA4300F3717F /* AppDelegate.m in Sources */,
 				DD85DADD2443DA4A00F3717F /* main.m in Sources */,
 				DD85DACF2443DA4300F3717F /* SceneDelegate.m in Sources */,
+				DD9391992443F69F00BBC5FC /* HTTPService.m in Sources */,
+				DD9391962443F5BC00BBC5FC /* FionaData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,13 +342,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 363T9DTZQA;
 				INFOPLIST_FILE = FionaAppleSongs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gvlcek.FionaAppleSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,13 +360,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 363T9DTZQA;
 				INFOPLIST_FILE = FionaAppleSongs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gvlcek.FionaAppleSongs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
